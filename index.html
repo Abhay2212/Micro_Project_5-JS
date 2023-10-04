@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro Project(JS Module)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="container">
+      <header id="score">
+        <div class="score-left">
+          <ul>
+            <li>ROCK</li>
+            <li>PAPER</li>
+            <li>SCISSORS</li>
+          </ul>
+        </div>
+        <div class="score-right">
+          <div class="score-right-box1">
+            <p class="right-heading">COMPUTER</p>
+            <p class="right-heading">SCORE</p>
+            <p class="right-main computer-score">0</p>
+          </div>
+          <div class="score-right-box2">
+            <p class="right-heading">YOUR</p>
+            <p class="right-heading">SCORE</p>
+            <p class="right-main user-score">0</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="game">
+        <button class="choose-btn" data-choose="rock">
+          <div class="choose rock">
+            <img src="./assets/icon-rock.png" alt="Rock" />
+          </div>
+        </button>
+        <button class="choose-btn" data-choose="scissors">
+          <div class="choose scissors">
+            <img src="./assets/icon-scissors.png" alt="Scissors" />
+          </div>
+        </button>
+        <button class="choose-btn" data-choose="paper">
+          <div class="choose paper">
+            <img src="./assets/icon-paper.png" alt="Paper" />
+          </div>
+        </button>
+      </section>
+
+      <section id="main-result" style="display: none">
+        <div class="result-headings">
+          <h2>you picked</h2>
+          <h2>pc picked</h2>
+        </div>
+        <div class="result">
+          <div id="user-choice"></div>
+          <div id="result-text">
+            <div class="win" style="display: none">
+              <h1 class="win-text">YOU WIN</h1>
+              <h2 class="against-text">AGAINST PC</h2>
+              <button
+                id="play-again-btn"
+                onClick="window.location.reload(true)"
+              >
+                Play Again
+              </button>
+            </div>
+            <div class="lose" style="display: none">
+              <h1 class="lose-text">YOU LOSE</h1>
+              <h2 class="against-text">AGAINST PC</h2>
+              <button
+                id="play-again-btn"
+                onClick="window.location.reload(true)"
+              >
+                Play Again
+              </button>
+            </div>
+            <div class="tie" style="display: none">
+              <h1 class="tie-text">TIE UP</h1>
+              <button id="replay-btn" onClick="window.location.reload(true)">
+                REPLAY
+              </button>
+            </div>
+          </div>
+          <div id="computer-choice"></div>
+        </div>
+      </section>
+
+      <div class="winner">
+        <div class="outer" style="display: none">
+          <div class="middle">
+            <div class="inner"></div>
+          </div>
+        </div>
+        <div class="outer1" style="display: none">
+          <div class="middle1">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div> 
+
+      <button id="next" style="display: none">
+        <a href="./win.html"~>Next</a>
+      </button>
+
+      <button class="rules-btn" onclick="toggleRules()">RULES</button>
+      <div id="rule-area">
+        <button class="close-btn" onclick="closeRules()">
+          <img src="./assets/icons8-cross-30.png" alt="close button" />
+        </button>
+        <div class="rule-content">
+          <h2>Game Rules</h2>
+          <div class="rules">
+            <ul>
+              <li>
+                <span
+                  >Rock beats scissors, scissors beat paper, and paper beats
+                  rock.</span
+                >
+              </li>
+              <li>
+                <span
+                  >Agree ahead of time whether you’ll count off “rock, paper,
+                  scissors, shoot” or just “rock, paper, scissors.”</span
+                >
+              </li>
+              <li>
+                <span
+                  >Use rock, paper, scissors to settle minor decisions or simply
+                  play to pass the time.</span
+                >
+              </li>
+              <li>
+                <span
+                  >If both players lay down the same hand, each player lays down
+                  another hand.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-win">
+        <div class="stars">
+            <div class="star star-1">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-2">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-3">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-4">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-5">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-6">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-7">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star star-8">
+                <img src="./assets/icons8-star.png" alt="">
+            </div>
+            <div class="star trophy">
+                <img src="./assets/icons8-trophy.png" alt="">
+            </div>
+        </div>  
+        <div class="text">
+            <h1>HURRAY!!</h1>
+            <h2>YOU WON THE GAME</h2>
+            <button class="play-again" onclick="window.history.back()">play again</button>
+        </div>
+       
+
+        <button class="rules-btn" onclick="toggleRules()">RULES</button>
+        <div id="rule-area">
+          <button class="close-btn" onclick="closeRules()">
+            <img src="./assets/icons8-cross-30.png" alt="close button" />
+          </button>
+          <div class="rule-content">
+            <h2>Game Rules</h2>
+            <div class="rules">
+              <ul>
+                <li>
+                  <span
+                    >Rock beats scissors, scissors beat paper, and paper beats
+                    rock.</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Agree ahead of time whether you’ll count off “rock, paper,
+                    scissors, shoot” or just “rock, paper, scissors.”</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Use rock, paper, scissors to settle minor decisions or simply
+                    play to pass the time.</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >If both players lay down the same hand, each player lays down
+                    another hand.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
