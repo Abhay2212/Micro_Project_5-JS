@@ -9,6 +9,7 @@
 body {
   background: #8cc461;
   overflow: hidden;
+  overflow: hidden;
 }
 /* ------------------Score Section------------------ */
 #score {
@@ -449,8 +450,6 @@ body {
 
   #score {
     width: 90vw;
-    /* margin: 30px 5%; */
-    flex-direction: column;
   }
 
   .score-left {
@@ -458,7 +457,7 @@ body {
   }
 
   .score-right {
-    
+    flex-direction: column;
     gap: 10px;
     margin: 12px 15px;
   }
