@@ -24,7 +24,7 @@ body {
 }
 .score-left {
   color: #fff;
-  margin: 12px 30px;
+  margin: 17px 30px;
   letter-spacing: 5px;
 }
 .score-left ul li {
@@ -41,6 +41,7 @@ body {
 .score-right-box1,
 .score-right-box2 {
   width: 150px;
+  height: 21vh;
   background: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -445,7 +446,7 @@ body {
   letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 468px) {
+@media (max-width: 468px) {
   #score {
     width: 95vw;
     height: 20vh;
@@ -483,7 +484,7 @@ body {
       grid-template-areas:
         "rock scissors"
         "paper paper";
-      margin-left:180px;
+      margin-left:160px;
   }
   .choose {
     width: 80px;
