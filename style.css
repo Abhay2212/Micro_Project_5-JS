@@ -447,23 +447,24 @@ body {
 
 @media only screen and (max-width: 468px) {
   #score {
-    width: 94vw;
+    width: 95vw;
     height: 20vh;
   }
   .score-left {
-    margin: 12px 15px;
+    margin: 12px 0px 15px 12px;
   }
   .score-left ul li {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
+    line-height: 25px;
   }
   .score-right {
-    gap: 10px;
-    margin: 12px 15px;
+    gap: 8px;
+    margin: 12px 15px 12px 0px ;
   }
   .score-right-box1,
   .score-right-box2 {
-    width: 100%;
+    width: 100%;  
     padding: 20px 10px;
   }
   .right-heading,
