@@ -444,3 +444,28 @@ body {
   font-weight: 900;
   letter-spacing: 3px;
 }
+
+@media only screen and (max-width: 480px){
+
+  #score {
+    width: 90vw;
+    /* margin: 30px 5%; */
+    flex-direction: column;
+  }
+
+  .score-left {
+    margin: 12px 15px;
+  }
+
+  .score-right {
+    
+    gap: 10px;
+    margin: 12px 15px;
+  }
+
+  .score-right-box1,
+  .score-right-box2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
