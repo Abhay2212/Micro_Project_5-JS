@@ -144,7 +144,7 @@ body {
   justify-content: space-around;
 }
 #user-choice,
-#computer-choice{
+#computer-choice {
   transform: scale(1.2);
 }
 #result-text {
@@ -181,7 +181,7 @@ body {
   top: 278px;
   left: 230px;
 }
-.outer1{
+.outer1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +230,6 @@ body {
   border-radius: 50%;
   background: #179224c9;
 }
-
 
 /*------------ Style the different parts of the result text-------------------- */
 .win-text,
@@ -446,8 +445,7 @@ body {
   letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 468px){
-
+@media only screen and (max-width: 468px) {
   #score {
     width: 94vw;
     height: 20vh;
@@ -456,13 +454,10 @@ body {
     margin: 12px 15px;
   }
   .score-left ul li {
-    display: flex;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 35px;
   }
   .score-right {
-    /* flex-direction: column; */
     gap: 10px;
     margin: 12px 15px;
   }
@@ -472,15 +467,14 @@ body {
     padding: 20px 10px;
   }
   .right-heading,
-.right-main {
-  font-size: 14px;
-
-}
-.score-right-box1 .computer-score,
-.score-right-box2 .user-score{
-  margin-top: 15px;
-  font-size: 18px;
-}
+  .right-main {
+    font-size: 14px;
+  }
+  .score-right-box1 .computer-score,
+  .score-right-box2 .user-score {
+    margin-top: 15px;
+    font-size: 18px;
+  }
 
   #game {
     width: 90vw;
@@ -509,8 +503,8 @@ body {
   }
 
   #next {
-    padding: 10px 18px; 
-    font-size: 18px; 
+    padding: 10px 18px;
+    font-size: 18px;
     right: 10px;
     bottom: 10px;
   }
@@ -530,5 +524,4 @@ body {
     right: 10px;
     bottom: 10px;
   }
-
 }
