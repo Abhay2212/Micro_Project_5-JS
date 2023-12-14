@@ -477,16 +477,20 @@ body {
   }
 
   #game {
-    width: 90vw;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "rock"
-      "scissors"
-      "paper";
+    width: 100%;
+      grid-template-columns: (repeat(2, 1fr));
+      grid-template-areas:
+        "rock scissors"
+        "paper paper";
+      margin-left:200px;
   }
-  #game::before {
-    left: 50%;
-    transform: translateX(-50%);
+  .choose {
+    width: 80px;
+    height: 80px;
+  }
+  .choose::before {
+    width: 100px;
+    height: 100px;
   }
 
   #main-result {
